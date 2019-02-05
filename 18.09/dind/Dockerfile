@@ -37,7 +37,8 @@ RUN set -eux; \
 
 COPY dockerd-entrypoint.sh /usr/local/bin/
 
-VOLUME /var/lib/docker
+# Doesn't play well with uge docker edition
+#VOLUME /var/lib/docker
 EXPOSE 2375
 
 ENTRYPOINT ["dockerd-entrypoint.sh"]
