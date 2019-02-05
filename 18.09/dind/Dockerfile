@@ -1,4 +1,4 @@
-FROM cameronbrunner/debian-docker:18.09
+FROM cameronbrunner/docker:18.09
 
 # https://github.com/docker/docker/blob/master/project/PACKAGERS.md#runtime-dependencies
 RUN set -eux; \
